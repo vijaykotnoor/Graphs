@@ -131,7 +131,7 @@ void Graph::topoSort()
 			}
 
 			visited[s] = true;
-            auto allvisited = true;
+            		auto allvisited = true;
 			for(const auto elem: adjList_[s])
 			{
 				if(!visited[elem])
@@ -140,14 +140,8 @@ void Graph::topoSort()
 					dfsStack.push(elem);
 				}
 			}
-
-
 		}
-
-	}
-
-
-
+		}
 	}
 
     std::cout << "topoSortStack.size()"<<topoSortStack.size()<< std::endl;
