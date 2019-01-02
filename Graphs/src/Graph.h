@@ -50,6 +50,8 @@ public:
 			std::vector<int>& low, std::vector<int>& parent);
 
 private:
+	//The adjacency list is a array of lists 
+	//This can be templatized to take any type
 	std::vector<std::list<int>> adjList_;
 	std::vector<int> inTime_;
 	std::vector<int> outTime_;
